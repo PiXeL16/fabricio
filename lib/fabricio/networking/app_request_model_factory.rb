@@ -149,6 +149,7 @@ module Fabricio
       def total_sessions_request_model(session, app_id, start_time, end_time, build)
         path = growth_analytics_endpoint(session, app_id, 'total_sessions_scalar')
         params = {
+            'app_id' => app_id,
             'start' => start_time,
             'end' => end_time,
             'build' => build
