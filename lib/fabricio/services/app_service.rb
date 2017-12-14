@@ -119,8 +119,8 @@ module Fabricio
       # @param end_time [String] Timestamp of the end date
       # @param build [String] The version of the build. E.g. '4.0.1 (38)'
       # @return [Integer]
-      def total_sessions(id, start_time, end_time, build)
-        request_model = @request_model_factory.total_sessions_request_model(@session, id, start_time, end_time, build)
+      def total_sessions(org_id, id, start_time, end_time, build)
+        request_model = @request_model_factory.total_sessions_request_model(org_id, id, start_time, end_time, build)
         response = @network_client.perform_request(request_model)
         JSON.parse(response.body)['sessions']
       end
