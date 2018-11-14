@@ -193,3 +193,4 @@ Thanks for help in dealing with API to Vadim Smal, Irina Dyagileva and Andrey Sm
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+Test
